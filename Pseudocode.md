@@ -46,8 +46,6 @@ INIT function
 
     CREATE WaterLVL
 
-    CREATE Fan() //Internal cooling fan used at start
-
     CREATE DispenserSwitchState //Input value for Cubed or Crushed Ice
 
     CREATE Count //counter variable
@@ -86,7 +84,7 @@ ICEMAKE function
 
     ENDFOR
 
-RETURN
+    RETURN
 
 
 
@@ -104,7 +102,7 @@ FAN function
 
     ENDFOR
 
-RETURN
+    RETURN
 
 
 
@@ -118,7 +116,7 @@ PUMP function
 
     ENDFOR
 
-RETURN
+    RETURN
 
 
 
@@ -134,7 +132,7 @@ CONDENSE function
     
     ENDFOR
 
-RETURN
+    RETURN
 
 
 //code for crushed ice function
@@ -149,7 +147,7 @@ CRUSH function
 
     Dispense crush ice from top layer
 
-RETURN
+    RETURN
     
     
 
