@@ -2,21 +2,36 @@ Ice Making Machine
 
 //START
 
-INIT()
+INIT();
+
 DETERMINE WaterLVL
+
 DETERMINE IceLVL
+
 INPUT DispenserSwitchState
+
 WHILE WaterLVL > 0 AND IceLVL < 100
+
     ICEMAKE()
-ELSE 
+
+ELSE
+
     PRINT ERROR - Operation has ceased. Please check water/ice levels.
+
     END PROGRAM
+
 ENDWHILE
+
 IF DispenserSwitchState = Crushed
+
     CRUSH()
+
 Else
+
     END PROGRAM
+
 ENDIF
+
 END
 
 //Initialize Values
